@@ -91,7 +91,7 @@ public class EaglesCatalogue {
     }
 
     /**
-     * Method which returns new list consisting only names of all eagles.
+     * Method which returns new list consisting of only names of all eagles.
      */
     public List<String> newListNames() {
         return eagles.stream()
@@ -152,7 +152,7 @@ public class EaglesCatalogue {
     }
 
     /**
-     * Method which returns list of eggs created on the basis of eagles with wings spread is greater than number delivered in the method's parameter.
+     * Method which returns list of eggs created on the basis of eagles with wings spread greater than number delivered in the method's parameter.
      * @param wingsSpread
      * @return
      */
