@@ -17,7 +17,6 @@ public class EaglesCatalogue {
 
     /**
      * Method which allows to add new Eagle to the list of eagles.
-     * @param eagle
      */
     public static void addEagle(Eagle eagle) {
         eagles.add(eagle);
@@ -153,8 +152,6 @@ public class EaglesCatalogue {
 
     /**
      * Method which returns list of eggs created on the basis of eagles with wings spread greater than number delivered in the method's parameter.
-     * @param wingsSpread
-     * @return
      */
     public List<Egg> createEggIfWingsSpread(int wingsSpread) {
         return eagles.stream()

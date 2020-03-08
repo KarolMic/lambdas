@@ -2,6 +2,8 @@ package creature;
 
 import colours.EagleColour;
 
+import java.util.Objects;
+
 /**
  * Application Eagle class.
  *
@@ -60,4 +62,19 @@ public class Eagle implements Comparable<Eagle> {
                 + getEagleColour().getColour() + "'" + ", WingsSpred= " + "'" + wingsSpread + "'" + "}";
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Eagle eagle = (Eagle) o;
+        return age == eagle.age &&
+                wingsSpread == eagle.wingsSpread &&
+                Objects.equals(name, eagle.name) &&
+                eagleColour == eagle.eagleColour;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, eagleColour, wingsSpread);
+    }
 }
